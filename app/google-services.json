@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "729422413957",
+    "project_id": "earlybirdies-a6c56",
+    "storage_bucket": "earlybirdies-a6c56.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:729422413957:android:bc4c2b5bdeb7f8bc8c69ec",
+        "android_client_info": {
+          "package_name": "za.co.varsitycollege.st10088708.earlybirdies"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDlF0IvbqoYSqqRYNBk3h85Kve2ghKDYy8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

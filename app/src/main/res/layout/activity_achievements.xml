@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Achievements"
+    android:background="@drawable/background2">
+    <ImageView
+        android:id="@+id/appIcon"
+        android:layout_width="96dp"
+        android:layout_height="51dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/logo" />
+
+
+    <TextView
+        android:id="@+id/addBirdObservationTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Achievement System"
+        android:textColor="@color/green"
+        android:textAlignment="center"
+        android:textSize="36sp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/appIcon" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="40dp"
+        android:layout_gravity="center_vertical">
+
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="GOAL PROGRESS:"
+            android:paddingLeft="20dp"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_marginTop="100dp"
+            android:textColor="@color/green"/>
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="@android:style/Widget.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:backgroundTint="@color/black"
+            android:max="10"
+            android:padding="20dp"
+            android:progress="5"
+            android:progressTint="#B4310CD6" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="16dp">
+
+            <ImageView
+                android:id="@+id/bronze"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/bronze"
+                android:alpha="0.3"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="10dp"/>
+
+            <ImageView
+                android:id="@+id/silver"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/silver_medal"
+                android:alpha="0.3"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="10dp" />
+
+            <ImageView
+                android:id="@+id/gold"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/gold_medal"
+                android:alpha="0.3"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="10dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="16dp">
+
+            <TextView
+                android:id="@+id/textBox1"
+                android:layout_width="wrap_content"
+                android:minWidth="70dp"
+                android:paddingLeft="20dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/bronze"
+                android:text="Bronze"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"/>
+
+            <TextView
+                android:id="@+id/textBox2"
+                android:layout_width="wrap_content"
+                android:minWidth="70dp"
+                android:paddingLeft="20dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/silver"
+                android:layout_centerHorizontal="true"
+                android:text="Silver"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="20dp"/>
+
+            <TextView
+                android:id="@+id/textBox3"
+                android:layout_width="wrap_content"
+                android:minWidth="70dp"
+                android:paddingLeft="20dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/gold"
+                android:layout_centerHorizontal="true"
+                android:text="Gold"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="14dp"/>
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/totalItemsTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total bird observations:"
+            android:paddingTop="40dp"
+            android:paddingLeft="20dp"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/spacerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="240dp"
+        android:layout_gravity="fill_vertical">
+    </LinearLayout>
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="30dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/bottom_background"
+        android:elevation="2dp"
+        app:itemIconSize="32dp"
+        app:itemIconTint="@drawable/item_selector"
+        app:itemRippleColor="@android:color/transparent"
+        app:labelVisibilityMode="unlabeled"
+        app:menu="@menu/bottom_navigation" />
+
+</RelativeLayout>

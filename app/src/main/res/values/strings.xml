@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">EarlyBirdies</string>
+    <string name="login"> LOGIN</string>
+    <string name="sign_up"> SIGN UP</string>
+    <string name="title_trophy"> Achievements</string>
+    <string name="title_gallery"> Gallery</string>
+    <string name="title_home"> Home</string>
+    <string name="title_add"> Add bird</string>
+    <string name="open_nav">Open Navigation Drawer</string>
+    <string name="close_nav">Close Navigation Drawer</string>
+
+    <string name="api_key">AIzaSyBGUPwlgYq1wE-oLKkslA8PJd73VHsHIBg</string>
+    <string name="api_key2">AIzaSyBIYSXf6q_MOVv98OjKzWzzEOJPS7f8sl0</string>
+    <string name="search_for_a_place">Search for a place...</string>
+    <string name="searchBarDesc">searchBarDesc</string>
+    <string name="searchHere">Search Here</string>
+    <string name="buttonsearch">buttonSearch</string>
+
+</resources>

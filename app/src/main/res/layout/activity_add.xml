@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background2"
+    android:contentDescription="scrollviewUpload"
+    tools:context=".Add">
+
+    <ImageView
+        android:id="@+id/appIcon"
+        android:layout_width="96dp"
+        android:layout_height="51dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/logo" />
+
+
+    <TextView
+        android:id="@+id/addBirdObservationTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="   Add Bird Observation"
+        android:textColor="@color/green"
+        android:textAlignment="center"
+        android:textSize="36sp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/appIcon" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/addBirdObservationTextView"
+        android:layout_marginTop="3dp">
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="23dp"
+            android:background="@drawable/border"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Upload Bird Image"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:id="@+id/uploadImage"
+                android:layout_width="wrap_content"
+                android:layout_height="111dp"
+                android:padding="10dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/cameraicon" />
+
+            <EditText
+                android:id="@+id/uploadBirdName"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="15dp"
+                android:background="@drawable/border"
+                android:drawablePadding="8dp"
+                android:hint="Name of bird"
+                android:textSize="20dp"
+                android:inputType="text"
+                android:orientation="vertical"
+                android:padding="15dp"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black" />
+
+            <EditText
+                android:id="@+id/uploadBirdLocation"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="15dp"
+                android:background="@drawable/border"
+                android:drawablePadding="8dp"
+                android:hint="Bird Location"
+                android:inputType="text"
+                android:orientation="vertical"
+                android:padding="15dp"
+                android:textSize="20dp"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black" />
+
+
+            <EditText
+                android:id="@+id/uploadBirdDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:background="@drawable/border"
+                android:drawablePadding="8dp"
+                android:hint="Bird Description"
+                android:inputType="textMultiLine"
+                android:minLines="3"
+                android:orientation="vertical"
+                android:padding="15dp"
+                android:textSize="20dp"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/saveButton"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:text="SAVE"
+                    android:paddingRight="20dp"
+                    android:paddingLeft="20dp"
+                    android:textSize="18sp"
+                    app:cornerRadius="30dp" />
+
+                <Button
+                    android:id="@+id/clearButton"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:text="CLEAR"
+                    android:textSize="18sp"
+                    app:cornerRadius="30dp" />
+            </LinearLayout>
+
+            <com.google.android.material.bottomnavigation.BottomNavigationView
+                android:id="@+id/bottomNavigation"
+                android:layout_width="match_parent"
+                android:layout_height="50sp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="26dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/bottom_background"
+                android:elevation="2dp"
+                app:itemIconSize="32dp"
+                app:itemIconTint="@drawable/item_selector"
+                app:itemRippleColor="@android:color/transparent"
+                app:labelVisibilityMode="unlabeled"
+                app:menu="@menu/bottom_navigation" />
+
+        </LinearLayout>
+
+
+
+
+    </ScrollView>
+
+
+
+</RelativeLayout>
